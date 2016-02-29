@@ -40,25 +40,25 @@ body {
 		margin: 10px 20px;
 		font-weight: 700;
 		@include font-rem(32);
-		color: lighten($base-color,20);
+		color: lighten($base-color,18);
 		@media #{$medium} {
-			@include font-rem(48);
+			@include font-rem(15);
 		}
 		@media #{$large} {
-			@include font-rem(60);
+			@include font-rem(25);
 		}
 	}
 	h2 {
 		margin: 0;
-		@include font-rem(18);
+		@include font-rem(10);
 		text-transform: uppercase;
-		color: lighten($base-color,40);
+		color: lighten($base-color,12);
 		@media #{$medium} {
-			@include font-rem(24);
+			@include font-rem(15);
 		}
 	}
 	p {
-		color: lighten($base-color,20);
+		color: lighten($base-color,12);
 	}
 }
 .feature .header-title {
@@ -114,8 +114,8 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100%;
+		width: 0%;
+		height: 0%;
 		background-color: rgba($base-color,0.3);
 	}
 	img {
