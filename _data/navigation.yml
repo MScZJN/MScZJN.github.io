@@ -1,0 +1,13 @@
+# Menu navigation links
+
+- title: Theme Setup
+  url: /theme-setup/
+
+- title: Git
+  url: /Git/
+
+- title: Python
+  url: /Python/
+
+- title: Xcode
+  url: /Xcode/
