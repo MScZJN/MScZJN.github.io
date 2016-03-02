@@ -5,25 +5,31 @@
 		<li>
 			<a href="#">Git教程</a>
 			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/posts/Git/">全部</a></li>
+				<li><a href="{{ site.url }}/posts/Git/">示例</a></li>
 			</ul>
 		</li>
 		<li>
 			<a href="#">Python教程</a>
 			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/posts/Python/">全部</a></li>
+				<li><a href="{{ site.url }}/posts/Python/">示例</a></li>
 			</ul>
 		</li>
 		<li>
 			<a href="#">Xcode教程</a>
 			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/posts/Xcode/">全部</a></li>
+				<li><a href="{{ site.url }}/posts/Xcode/">示例</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="#">PM自我总结</a>
+			<a href="#">Blog搭建教程</a>
 			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/posts/PM/">全部</a></li>
+				<li><a href="{{ site.url }}/posts/Blog">示例</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">PM工作笔记</a>
+			<ul class="dl-submenu">
+				<li><a href="{{ site.url }}/posts/PM/">示例</a></li>
 			</ul>
 		</li>
 		<li>
@@ -34,9 +40,8 @@
 					<h4>{{ site.owner.name }}</h4>
 					<p>{{ site.owner.bio }}</p>
 				</li>
-				<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">更多</span></a></li>
 				{% if site.owner.email %}<li>
-					<a href="mailto:{{ site.owner.email }}"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				<li><a href="mailto:{{ site.owner.email }}"><i class="fa fa-fw fa-envelope"></i> Email</a>
 				</li>{% endif %}
 				{% if site.owner.twitter %}<li>
 					<a href="https://twitter.com/{{ site.owner.twitter }}"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
@@ -50,6 +55,7 @@
 				{% if site.owner.github %}<li>
 					<a href="https://github.com/{{ site.owner.github }}"><i class="fa fa-fw fa-github"></i> GitHub</a>
 				</li>{% endif %}
+				<li><a href="{{ site.url }}/More/"><span class="btn btn-inverse">更多</span></a></li>
 			</ul><!-- /.dl-submenu -->
 		</li>
 		{% for link in site.data.navigation %}
