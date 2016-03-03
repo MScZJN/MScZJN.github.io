@@ -17,7 +17,7 @@ modified: 2016-03-03
 <br>
 
 > Anything in life worth doing is worth overdoing, moderation is for cowards.
-> ------ Act of Valor
+> ------ <small>Act of Valor</small>
 >
 <!-- more -->
 
