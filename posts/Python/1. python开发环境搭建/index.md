@@ -3,7 +3,7 @@ layout: page
 title: Python开发环境搭建
 image:
     feature: abstract.jpg
-comments: false
+comments: true
 modified: 2016-03-13
 ---
 
