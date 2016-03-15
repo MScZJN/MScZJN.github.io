@@ -4,6 +4,7 @@ title: 关于作者和建站初衷
 image:
     feature: abstract.jpg
 modified: 2016-03-03
+comments: false
 ---
 ##### 作为一只产品汪，建立Blog的目的主要是为了记录自己的学习历程。
 
