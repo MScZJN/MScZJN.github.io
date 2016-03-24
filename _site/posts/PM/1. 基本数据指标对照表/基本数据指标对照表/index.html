@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Python开发环境搭建 &#8211; 不会，学；学不会，慢慢学。</title>
+<title>基本数据指标对照表 &#8211; 不会，学；学不会，慢慢学。</title>
 <meta name="description" content="">
 
 
@@ -14,16 +14,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python开发环境搭建">
+<meta property="og:title" content="基本数据指标对照表">
 <meta property="og:description" content="">
-<meta property="og:url" content="/posts/Python/1.%20python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+<meta property="og:url" content="/posts/PM/1.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/">
 <meta property="og:site_name" content="不会，学；学不会，慢慢学。">
 
 
 
 
 
-<link rel="canonical" href="/posts/Python/1.%20python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+<link rel="canonical" href="/posts/PM/1.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="不会，学；学不会，慢慢学。 Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -125,7 +125,7 @@
 <div class="entry-header">
   
   <div class="entry-image">
-    <img src="/images/abstract.jpg" alt="Python开发环境搭建">
+    <img src="/images/abstract.jpg" alt="基本数据指标对照表">
   </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->
 
@@ -134,7 +134,7 @@
   <article class="hentry">
     <header class="header-title">
       <div class="header-title-wrap">
-        <h1 class="entry-title">Python开发环境搭建</h1>
+        <h1 class="entry-title">基本数据指标对照表</h1>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -145,76 +145,26 @@
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <h2 id="homebrew">安装Homebrew</h2>
-<p>首先你需要知道Mac默认的python版本为2.7，但是在学习过程中很可能会需要使用其他版本的python。系统自带的2.7版本会影响很多软件的时候，所以保持这个版本的相对纯净比较重要。</p>
+      <h3 id="section">产品数据指标对照表</h3>
 
-<p><strong>Homebrew</strong>可以理解成类似“App Store”或者“Google Store”这类软件平台，区别是他安装的是各种源码而不是封装好的软件包。</p>
+<p><img src="media/数据统计指标.png" width="1000" height="1021" /></p>
 
-<p>打开终端输入下面的命令：</p>
-
-<p><code class="highlighter-rouge">ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</code></p>
-
-<p>等待下载并安装完成即可。</p>
-
-<p>常用命令：</p>
-
-<blockquote>
-  <p>安装软件：brew install + name<br />
-卸载软件：brew uninstall + name<br />
-已安装列表：brew list<br />
-更新Homebrew：brew update    <br />
-<!-- more --></p>
-</blockquote>
-
-<h2 id="pyenv">安装pyenv</h2>
-<p><strong>pyenv</strong>是python的版本管理器，有了他我们可以干净利落的在各个python版本间切换而不至于把系统搞得一团糟。</p>
-
-<p>在终端输入下面的命令来安装pyenv：</p>
-
-<p><code class="highlighter-rouge">brew install pyenv</code></p>
-
-<p>为了使pyenv的命令生效我们需要更改pyenv的root path，具体做法：</p>
-
-<ol>
-  <li><code class="highlighter-rouge">cd</code>到根目录下</li>
-  <li>输入<code class="highlighter-rouge">touch .bash_profile</code>创建 .bash_profile 文件</li>
-  <li>输入<code class="highlighter-rouge">mvim .bash_profile</code>打开文件</li>
-  <li>输入以下内容到 .bash_profile 内：   <br />
-<code class="highlighter-rouge">export PYENV_ROOT=/usr/local/opt/pyenv</code><br />
-<code class="highlighter-rouge">if which pyenv &gt; /dev/null; then eval "$(pyenv init -)"; fi</code></li>
-  <li>输入<code class="highlighter-rouge">:wq</code>写入并退出</li>
-  <li>输入<code class="highlighter-rouge">SHELL -l</code>，.bash_profile 文件会生效pyenv就配置好了</li>
-</ol>
-
-<p>附上一些常见的pyenv命令供大家玩耍：</p>
-
-<blockquote>
-  <p>查看所以可以安装的python版本：pyenv install –list  <br />
-安装特定版本的python：pyenv install + version，例子：pyenv install 2.7.8  <br />
-查看当前使用的python版本：pyenv version  <br />
-查看所以安装的python版本：pyenv versions  <br />
-设置全局python版本：pyenv global + version  <br />
-注：每次运行完 pyenv install 后，需要运行 pyenv rehash 来刷新。  <br />
-<!-- more --></p>
-</blockquote>
-
-<p>到此玩耍python之前的准备工作就算做完了，<strong>以上操作仅针对MAC系统</strong>。</p>
-
-<h2 id="section">参考</h2>
+<h3 id="section-1">常用数据资讯来源</h3>
 <ul>
-  <li><a href="http://brew.sh/"><strong>Homebrew</strong></a> 官方教程</li>
-  <li><a href="https://github.com/yyuu/pyenv"><strong>pyenv</strong></a> GitHub</li>
+  <li><a href="https://www.appannie.com/"><strong>AppAnnie</strong></a></li>
+  <li><a href="https://www.talkingdata.com/"><strong>TalkingData</strong></a></li>
+  <li><a href="http://mota.baidu.com/"><strong>BaiduMOTA</strong></a></li>
 </ul>
 
 
       <footer class="entry-meta">
-        <span>更新于 <span class="entry-date date published updated"><time datetime="2016-03-13">March 13, 2016</time></span></span>
+        <span>更新于 <span class="entry-date date published updated"><time datetime="2016-03-24">March 24, 2016</time></span></span>
         <span class="author vcard"><span class="fn">朱嘉楠</span></span>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <!-- <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/posts/Python/1.%20python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li> 
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/posts/Python/1.%20python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=/posts/Python/1.%20python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li> -->
+    <!-- <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/posts/PM/1.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li> 
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/posts/PM/1.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=/posts/PM/1.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E5%AF%B9%E7%85%A7%E8%A1%A8/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li> -->
   </ul>
 </div><!-- /.social-share -->
 
