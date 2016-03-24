@@ -9,7 +9,7 @@ modified: 2016-03-24
 
 ### 产品数据指标对照表
 
-<img src="media/数据统计指标.png" width="1000"  height="1021">
+<img src="/media/数据统计指标.png" width="1000"  height="1021">
 
 
 ### 常用数据资讯来源
